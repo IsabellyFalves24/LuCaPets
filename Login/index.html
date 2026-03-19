@@ -9,50 +9,65 @@
 </head>
 
 <body>
-    <div class="caixaCentral">
+    <main class="caixa-central">
 
         <div class="carrossel">
             <div class="slides">
-                <img src="./Img/gato1.jpeg" alt="imagem de gato">
-                <img src="./Img/gato2.jpeg" alt="imagem de gato">
-                <img src="./Img/gato3.jpeg" alt="imagem de gato">
-                <img src="./Img/gato4.jpeg" alt="imagem de gato">
-                <img src="./Img/gato5.jpeg" alt="imagem de gato">
+                <div class="slide">
+                    <img src="./Img/gato1.jpeg" alt="imagem de gato">
+                </div> 
+
+                <div class="slide">
+                    <img src="./Img/gato2.jpeg" alt="imagem de gato">
+                </div>
+
+                <div class="slide">
+                    <img src="./Img/gato3.jpeg" alt="imagem de gato">
+                </div>
+
+                <div class="slide">
+                    <img src="./Img/gato4.jpeg" alt="imagem de gato">
+                </div>
+
+                <div class="slide">
+                    <img src="./Img/gato5.jpeg" alt="imagem de gato">
+                </div>
             </div>
         </div>
 
-        <section class="CaixaDeLogin">
+        <section class="caixa-login">
                 <h1>LuCa Pets</h1>
-                <p class="slogan"><b>Amor e cuidado em cada patinha</b></p>
+                <p class="slogan">Amor e cuidado em cada patinha</p>
 
-                <form>
+                <form autocomplete="on">
 
-                    <div class="inputBox">
-                        <div class="title">
-                            <i class="fa-solid fa-paw"></i>
-                            <label for="usuário">Usuário</label>
-                        </div>
-                        <input type="email">
+                    <div class="input-box">
+                            <label for="usuario" class="title">
+                                <i class="fa-solid fa-paw"></i>
+                                Usuário
+                            </label>
+                        <input type="email" id="usuario" name="usuario" autocomplete="email" required>
                     </div>
 
-                    <div class="inputBox">
-                        <div class="title">
-                            <i class="fa-solid fa-paw"></i>
-                            <label for="senha">Senha</label>
-                        </div>
-                        <input type="password">
+                    <div class="input-box">
+                            <label for="senha" class="title">
+                                <i class="fa-solid fa-paw"></i>
+                                Senha
+                            </label>
+                        
+                        <input type="password" id="senha" name="senha" autocomplete="senha" required>
                     </div>
+                         <label for="lembrar-senha" class="lembrar">
+                            <input type="checkbox" id="lembrar-senha">
+                            Lembrar senha
+                        </label>
 
-                    <div class="lembrar">
-                        <input type="checkbox" id="lembrarSenha">
-                        <label for="lembrarSenha">Lembrar senha</label>
-                    </div>
 
-                    <button type="submit" class="login">Login</button>
+                    <button type="submit" class="login">Entrar</button>
 
-                    <div class="cadastroEsqueci">
+                    <div class="cadastro-esqueci">
                         <div class="cadastro">
-                            <i class="fa-solid fa-bone";"></i>
+                            <i class="fa-solid fa-bone"></i>
                             <p>Não tem conta? <a href="#">Cadastre-se</a></p>   
                         </div>
                         
@@ -66,6 +81,8 @@
 
             </section>
     
-    </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
