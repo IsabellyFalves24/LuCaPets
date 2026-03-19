@@ -14,9 +14,9 @@ body {
 }
 
 .caixa-central {
-    max-width: 1200px;
+    max-width: 1800px;
     width: 90%;
-    min-height: 750px;
+    min-height: 800px;
     display: flex;
     align-items: stretch;
     border-radius: 30px;
